@@ -37,7 +37,6 @@ namespace LabRab1SAPRKS
         private void PrintRecursive(TreeNode treeNode)
         {
             System.Diagnostics.Debug.WriteLine(treeNode.Text); //печать одного узла
-            //MessageBox.Show(treeNode.FullPath);
             //просматриваем все родительские вершины, создаем отдельный узел на диске
             CreateIfMissing(testdir + treeNode.FullPath); 
 
@@ -172,7 +171,7 @@ namespace LabRab1SAPRKS
 
             catch (Exception exp)
             {
-                MessageBox.Show(exp + " Ошииииииибочка");
+                MessageBox.Show(exp + " Ошиииииииииибочка");
             }
         }
 
@@ -219,7 +218,7 @@ namespace LabRab1SAPRKS
             ListViewItem myFile = listView1.GetItemAt(e.X, e.Y);
 
 
-            String fullPath = testdir + treeView1.SelectedNode.FullPath + @"\" + myFile.Name;
+            String fullPath = testdir + treeView1.SelectedNode.FullPath + @"\" + myFile.Name; 
             System.Diagnostics.Process.Start(fullPath);
         }
     }
