@@ -17,3 +17,12 @@ C:\Users\HP\Desktop\LabRab1SAPRKS\LabRab1SAPRKS\LabRab1SAPRKS\obj\Debug\LabRab1S
 C:\Users\HP\Desktop\LabRab1SAPRKS\LabRab1SAPRKS\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\LabRab1SAPRKS\LabRab1SAPRKS\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.exe
 C:\Users\HP\Desktop\LabRab1SAPRKS\LabRab1SAPRKS\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.pdb
+E:\SAPR\1\LabRab1SAPRKS\bin\Debug\LabRab1SAPRKS.exe.config
+E:\SAPR\1\LabRab1SAPRKS\bin\Debug\LabRab1SAPRKS.exe
+E:\SAPR\1\LabRab1SAPRKS\bin\Debug\LabRab1SAPRKS.pdb
+E:\SAPR\1\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.csprojAssemblyReference.cache
+E:\SAPR\1\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.LabRabCAD.resources
+E:\SAPR\1\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.Properties.Resources.resources
+E:\SAPR\1\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.csproj.GenerateResource.cache
+E:\SAPR\1\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.exe
+E:\SAPR\1\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.pdb

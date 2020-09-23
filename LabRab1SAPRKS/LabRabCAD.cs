@@ -26,7 +26,7 @@ namespace LabRab1SAPRKS
 
         TreeNode mySelectedNode;
 
-        public string testdir = @"G:\List\";
+        public string testdir = @"F:\List\";
         private void CreateIfMissing(string path)
         {
             bool folderExist = Directory.Exists(path);
@@ -126,7 +126,7 @@ namespace LabRab1SAPRKS
             CallRecursive(treeView1);
         }
 
-        private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
             try
             {
