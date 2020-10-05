@@ -26,3 +26,4 @@ E:\SAPR\1\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.Properties.Resources.resources
 E:\SAPR\1\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.csproj.GenerateResource.cache
 E:\SAPR\1\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.exe
 E:\SAPR\1\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.pdb
+E:\SAPR\1\LabRab1SAPRKS\obj\Debug\LabRab1SAPRKS.Connect.resources

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace LabRab1SAPRKS
 {
@@ -19,6 +21,8 @@ namespace LabRab1SAPRKS
             CreateTreeDriveToolStripMenuItem.Enabled = false;
         }
 
+
+        SqlConnection myConnection = new SqlConnection("server=DESKTOP-60KJVUB\\SQLServer");
         int n=2;
         int node = 0; //Счетчик узлов
         int number = 0;
@@ -36,7 +40,7 @@ namespace LabRab1SAPRKS
 
         private void PrintRecursive(TreeNode treeNode)
         {
-            System.Diagnostics.Debug.WriteLine(treeNode.Text); //печать одного узла
+            System.Diagnostics.Debug.WriteLine(treeNode.Text);
             //просматриваем все родительские вершины, создаем отдельный узел на диске
             CreateIfMissing(testdir + treeNode.FullPath); 
 
@@ -220,6 +224,13 @@ namespace LabRab1SAPRKS
 
             String fullPath = testdir + treeView1.SelectedNode.FullPath + @"\" + myFile.Name; 
             System.Diagnostics.Process.Start(fullPath);
+        }
+
+        private void DatabaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Connect();
+            frm.Show();
+            this.Hide();
         }
     }
 }

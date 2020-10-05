@@ -38,6 +38,7 @@
             this.CreateTreeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CreateTreeDriveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AddObjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listView1 = new System.Windows.Forms.ListView();
             this.splitter1 = new System.Windows.Forms.Splitter();
@@ -84,6 +85,7 @@
             this.CreateTreeToolStripMenuItem,
             this.CreateTreeDriveToolStripMenuItem,
             this.AddObjectToolStripMenuItem,
+            this.DatabaseToolStripMenuItem,
             this.ExitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -111,6 +113,13 @@
             this.AddObjectToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.AddObjectToolStripMenuItem.Text = "Add Object";
             this.AddObjectToolStripMenuItem.Click += new System.EventHandler(this.AddObjectToolStripMenuItem_Click);
+            // 
+            // DatabaseToolStripMenuItem
+            // 
+            this.DatabaseToolStripMenuItem.Name = "DatabaseToolStripMenuItem";
+            this.DatabaseToolStripMenuItem.Size = new System.Drawing.Size(129, 20);
+            this.DatabaseToolStripMenuItem.Text = "Add PDF In Database";
+            this.DatabaseToolStripMenuItem.Click += new System.EventHandler(this.DatabaseToolStripMenuItem_Click);
             // 
             // ExitToolStripMenuItem
             // 
@@ -174,6 +183,7 @@
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem DeleteObjectToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem DatabaseToolStripMenuItem;
     }
 }
 
