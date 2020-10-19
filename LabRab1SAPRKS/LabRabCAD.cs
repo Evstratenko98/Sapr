@@ -222,7 +222,7 @@ namespace LabRab1SAPRKS
             ListViewItem myFile = listView1.GetItemAt(e.X, e.Y);
 
 
-            String fullPath = testdir + treeView1.SelectedNode.FullPath + @"\" + myFile.Name; 
+            string fullPath = testdir + treeView1.SelectedNode.FullPath + @"\" + myFile.Name; 
             System.Diagnostics.Process.Start(fullPath);
         }
 

@@ -103,16 +103,25 @@ namespace LabRab1SAPRKS
                 fs.CopyTo(ms); // Записываем в память пдф из файла
                 //получаем имя файла без пути и расширения
                 string nameOnly = Path.GetFileNameWithoutExtension(ofd.FileName);
-          
+                // full_path
+                string pathOnly = Path.GetFullPath(ofd.FileName);
+                //получаем doc_id
+                string docID = pathOnly.Substring(8,1);
+                // получаем obj_id
+                string subString = "Объект";
+                int indexOfSubstring = pathOnly.IndexOf(subString);
+                string objID = pathOnly.Substring(indexOfSubstring+7,1);
+
                 if (nameOnly.Length >= 40)
                     nameOnly = nameOnly.Substring(0, 39);
 
                 //используем случайное число в качестве уникального индекса
                 Random rnd = new Random();
                 int rnd_to_base = rnd.Next(100000, 999999);
-                string query = "INSERT INTO study2020.dbo.Table_1 VALUES ('" + nameOnly+
-                    "',"+ rnd_to_base.ToString()+",@pdf_file)";
-                
+
+                string query = "INSERT INTO study2020.dbo.Table_1 VALUES ('" + nameOnly +
+                   "'," + rnd_to_base.ToString() + ",@pdf_file,'"+ pathOnly + "', '"  +docID+ "', '"+objID + "' )";
+
                 using (SqlCommand querySavePDF = new SqlCommand(query))
                 {
                     querySavePDF.Connection = myConnection;
